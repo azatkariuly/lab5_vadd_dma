@@ -1,0 +1,165 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'krnl_vadd'" level="0">
+<item name = "Date">Tue Apr 19 22:13:58 2022
+</item>
+<item name = "Version">2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)</item>
+<item name = "Project">lab5_vadd_dma_azaz</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 7.268 ns, 1.25 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">4112, 4112, 41.120 us, 41.120 us, 4109, 4109, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="compute_add_U0">compute_add, 4108, 4108, 41.080 us, 41.080 us, 4108, 4108, none</column>
+<column name="store_result_U0">store_result, 4099, 4099, 40.990 us, 40.990 us, 4099, 4099, none</column>
+<column name="load_input20_U0">load_input20, 4098, 4098, 40.980 us, 40.980 us, 4098, 4098, none</column>
+<column name="load_input_U0">load_input, 4098, 4098, 40.980 us, 40.980 us, 4098, 4098, none</column>
+<column name="krnl_vadd_entry42_U0">krnl_vadd_entry42, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, -, -, -</column>
+<column name="FIFO">0, -, 40, 352, -</column>
+<column name="Instance">0, 5, 1135, 1698, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, -, -</column>
+<column name="Register">-, -, -, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 2, 1, 3, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="compute_add_U0">compute_add, 0, 5, 717, 963, 0</column>
+<column name="krnl_vadd_AXILiteS_s_axi_U">krnl_vadd_AXILiteS_s_axi, 0, 0, 106, 168, 0</column>
+<column name="krnl_vadd_entry42_U0">krnl_vadd_entry42, 0, 0, 3, 47, 0</column>
+<column name="load_input_U0">load_input, 0, 0, 102, 149, 0</column>
+<column name="load_input20_U0">load_input20, 0, 0, 102, 158, 0</column>
+<column name="store_result_U0">store_result, 0, 0, 105, 213, 0</column>
+</table>
+</item>
+<item name = "DSP48E"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+<column name="a_c_U">0, 5, 0, -, 3, 32, 96</column>
+<column name="in1_stream_V_U">0, 5, 0, -, 2, 32, 64</column>
+<column name="in2_stream_V_U">0, 5, 0, -, 2, 32, 64</column>
+<column name="out_stream_V_U">0, 5, 0, -, 2, 32, 64</column>
+<column name="size_c10_U">0, 5, 0, -, 2, 32, 64</column>
+<column name="size_c11_U">0, 5, 0, -, 2, 32, 64</column>
+<column name="size_c9_U">0, 5, 0, -, 2, 32, 64</column>
+<column name="size_c_U">0, 5, 0, -, 2, 32, 64</column>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="s_axi_AXILiteS_AWVALID">in, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_AWREADY">out, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_AWADDR">in, 5, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_WVALID">in, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_WREADY">out, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_WDATA">in, 32, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_WSTRB">in, 4, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_ARVALID">in, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_ARREADY">out, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_ARADDR">in, 5, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_RVALID">out, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_RREADY">in, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_RDATA">out, 32, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_RRESP">out, 2, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_BVALID">out, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_BREADY">in, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_BRESP">out, 2, s_axi, AXILiteS, scalar</column>
+<column name="ap_clk">in, 1, ap_ctrl_none, krnl_vadd, return value</column>
+<column name="ap_rst_n">in, 1, ap_ctrl_none, krnl_vadd, return value</column>
+<column name="in1_TDATA">in, 32, axis, in1_data_V, pointer</column>
+<column name="in1_TKEEP">in, 4, axis, in1_keep_V, pointer</column>
+<column name="in1_TSTRB">in, 4, axis, in1_strb_V, pointer</column>
+<column name="in1_TUSER">in, 4, axis, in1_user_V, pointer</column>
+<column name="in1_TLAST">in, 1, axis, in1_last_V, pointer</column>
+<column name="in1_TID">in, 5, axis, in1_id_V, pointer</column>
+<column name="in1_TDEST">in, 5, axis, in1_dest_V, pointer</column>
+<column name="in1_TVALID">in, 1, axis, in1_dest_V, pointer</column>
+<column name="in1_TREADY">out, 1, axis, in1_dest_V, pointer</column>
+<column name="in2_TDATA">in, 32, axis, in2_data_V, pointer</column>
+<column name="in2_TKEEP">in, 4, axis, in2_keep_V, pointer</column>
+<column name="in2_TSTRB">in, 4, axis, in2_strb_V, pointer</column>
+<column name="in2_TUSER">in, 4, axis, in2_user_V, pointer</column>
+<column name="in2_TLAST">in, 1, axis, in2_last_V, pointer</column>
+<column name="in2_TID">in, 5, axis, in2_id_V, pointer</column>
+<column name="in2_TDEST">in, 5, axis, in2_dest_V, pointer</column>
+<column name="in2_TVALID">in, 1, axis, in2_dest_V, pointer</column>
+<column name="in2_TREADY">out, 1, axis, in2_dest_V, pointer</column>
+<column name="out_r_TDATA">out, 32, axis, out_data_V, pointer</column>
+<column name="out_r_TKEEP">out, 4, axis, out_keep_V, pointer</column>
+<column name="out_r_TSTRB">out, 4, axis, out_strb_V, pointer</column>
+<column name="out_r_TUSER">out, 4, axis, out_user_V, pointer</column>
+<column name="out_r_TLAST">out, 1, axis, out_last_V, pointer</column>
+<column name="out_r_TID">out, 5, axis, out_id_V, pointer</column>
+<column name="out_r_TDEST">out, 5, axis, out_dest_V, pointer</column>
+<column name="out_r_TVALID">out, 1, axis, out_dest_V, pointer</column>
+<column name="out_r_TREADY">in, 1, axis, out_dest_V, pointer</column>
+</table>
+</item>
+</section>
+</profile>

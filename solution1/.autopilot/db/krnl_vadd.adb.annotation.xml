@@ -1,0 +1,43 @@
+<annotationInfo>
+<annotationInfo>
+&lt;\/annotationInfo&gt;
+<annotationInfo>
+<item  id="29" filename="lab5_vadd_dma_azaz/vadd_dma.cpp" linenumber="10" name="i_0_i_i_cast" contextFuncName="load_input" moduleName="load_input20" rtlName="i_0_i_i_cast_fu_150_p1" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\QCH170308\Desktop\saxpy_dma"&gt;&lt;\/item&gt;
+<item  id="30" filename="lab5_vadd_dma_azaz/vadd_dma.cpp" linenumber="10" name="icmp_ln10" contextFuncName="load_input" moduleName="load_input20" rtlName="icmp_ln10_fu_154_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="18" fileDirectory="C:\Users\QCH170308\Desktop\saxpy_dma"&gt;&lt;\/item&gt;
+<item  id="31" filename="lab5_vadd_dma_azaz/vadd_dma.cpp" linenumber="10" name="add_ln10" contextFuncName="load_input" moduleName="load_input20" rtlName="add_ln10_fu_159_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="38" fileDirectory="C:\Users\QCH170308\Desktop\saxpy_dma"&gt;&lt;\/item&gt;
+<item  id="40" filename="lab5_vadd_dma_azaz/vadd_dma.h" linenumber="30" name="ret" contextFuncName="pop_stream&lt;float&gt;" moduleName="load_input20" rtlName="in1_stream_V_din" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\QCH170308\Desktop\saxpy_dma"&gt;&lt;\/item&gt;
+&lt;\/annotationInfo&gt;
+<annotationInfo>
+<item  id="26" filename="lab5_vadd_dma_azaz/vadd_dma.cpp" linenumber="10" name="i_0_i_i_cast" contextFuncName="load_input" moduleName="load_input" rtlName="i_0_i_i_cast_fu_128_p1" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\QCH170308\Desktop\saxpy_dma"&gt;&lt;\/item&gt;
+<item  id="27" filename="lab5_vadd_dma_azaz/vadd_dma.cpp" linenumber="10" name="icmp_ln10" contextFuncName="load_input" moduleName="load_input" rtlName="icmp_ln10_fu_132_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="18" fileDirectory="C:\Users\QCH170308\Desktop\saxpy_dma"&gt;&lt;\/item&gt;
+<item  id="28" filename="lab5_vadd_dma_azaz/vadd_dma.cpp" linenumber="10" name="add_ln10" contextFuncName="load_input" moduleName="load_input" rtlName="add_ln10_fu_137_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="38" fileDirectory="C:\Users\QCH170308\Desktop\saxpy_dma"&gt;&lt;\/item&gt;
+<item  id="37" filename="lab5_vadd_dma_azaz/vadd_dma.h" linenumber="30" name="ret" contextFuncName="pop_stream&lt;float&gt;" moduleName="load_input" rtlName="in2_stream_V_din" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\QCH170308\Desktop\saxpy_dma"&gt;&lt;\/item&gt;
+&lt;\/annotationInfo&gt;
+<annotationInfo>
+<item  id="23" filename="lab5_vadd_dma_azaz/vadd_dma.cpp" linenumber="25" name="i_0_i_i_cast" contextFuncName="compute_add" moduleName="compute_add" rtlName="i_0_i_i_cast_fu_180_p1" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\QCH170308\Desktop\saxpy_dma"&gt;&lt;\/item&gt;
+<item  id="24" filename="lab5_vadd_dma_azaz/vadd_dma.cpp" linenumber="25" name="icmp_ln25" contextFuncName="compute_add" moduleName="compute_add" rtlName="icmp_ln25_fu_184_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="18" fileDirectory="C:\Users\QCH170308\Desktop\saxpy_dma"&gt;&lt;\/item&gt;
+<item  id="25" filename="lab5_vadd_dma_azaz/vadd_dma.cpp" linenumber="25" name="add_ln25" contextFuncName="compute_add" moduleName="compute_add" rtlName="add_ln25_fu_189_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="38" fileDirectory="C:\Users\QCH170308\Desktop\saxpy_dma"&gt;&lt;\/item&gt;
+<item  id="33" filename="lab5_vadd_dma_azaz/vadd_dma.cpp" linenumber="28" name="tmp_2_i_i" contextFuncName="compute_add" moduleName="compute_add" rtlName="krnl_vadd_fmul_32cud_U28" latency="3" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\QCH170308\Desktop\saxpy_dma"&gt;&lt;\/item&gt;
+<item  id="35" filename="lab5_vadd_dma_azaz/vadd_dma.cpp" linenumber="28" name="tmp_2" contextFuncName="compute_add" moduleName="compute_add" rtlName="krnl_vadd_fadd_32bkb_U27" latency="4" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\QCH170308\Desktop\saxpy_dma"&gt;&lt;\/item&gt;
+&lt;\/annotationInfo&gt;
+<annotationInfo>
+<item  id="23" filename="lab5_vadd_dma_azaz/vadd_dma.cpp" linenumber="37" name="add_ln37" contextFuncName="store_result" moduleName="store_result" rtlName="add_ln37_fu_147_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="39" fileDirectory="C:\Users\QCH170308\Desktop\saxpy_dma"&gt;&lt;\/item&gt;
+<item  id="27" filename="lab5_vadd_dma_azaz/vadd_dma.cpp" linenumber="34" name="zext_ln34" contextFuncName="store_result" moduleName="store_result" rtlName="zext_ln34_fu_153_p1" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\QCH170308\Desktop\saxpy_dma"&gt;&lt;\/item&gt;
+<item  id="28" filename="lab5_vadd_dma_azaz/vadd_dma.cpp" linenumber="34" name="icmp_ln34" contextFuncName="store_result" moduleName="store_result" rtlName="icmp_ln34_fu_157_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="18" fileDirectory="C:\Users\QCH170308\Desktop\saxpy_dma"&gt;&lt;\/item&gt;
+<item  id="29" filename="lab5_vadd_dma_azaz/vadd_dma.cpp" linenumber="34" name="i" contextFuncName="store_result" moduleName="store_result" rtlName="i_fu_162_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="38" fileDirectory="C:\Users\QCH170308\Desktop\saxpy_dma"&gt;&lt;\/item&gt;
+<item  id="37" filename="lab5_vadd_dma_azaz/vadd_dma.cpp" linenumber="37" name="icmp_ln37" contextFuncName="store_result" moduleName="store_result" rtlName="icmp_ln37_fu_168_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="18" fileDirectory="C:\Users\QCH170308\Desktop\saxpy_dma"&gt;&lt;\/item&gt;
+<item  id="38" filename="lab5_vadd_dma_azaz/vadd_dma.h" linenumber="53" name="bitcast_ln53" contextFuncName="push_stream&lt;float&gt;" moduleName="store_result" rtlName="out_r_TDATA_int" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\QCH170308\Desktop\saxpy_dma"&gt;&lt;\/item&gt;
+&lt;\/annotationInfo&gt;
+<annotationInfo>
+<item  id="30" filename="lab5_vadd_dma_azaz/vadd_dma.cpp" linenumber="60" name="size_c11" contextFuncName="krnl_vadd" moduleName="krnl_vadd" rtlName="size_c11_U" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\QCH170308\Desktop\saxpy_dma"><\/item>
+<item  id="31" filename="lab5_vadd_dma_azaz/vadd_dma.cpp" linenumber="60" name="size_c10" contextFuncName="krnl_vadd" moduleName="krnl_vadd" rtlName="size_c10_U" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\QCH170308\Desktop\saxpy_dma"><\/item>
+<item  id="32" filename="lab5_vadd_dma_azaz/vadd_dma.cpp" linenumber="60" name="size_c9" contextFuncName="krnl_vadd" moduleName="krnl_vadd" rtlName="size_c9_U" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\QCH170308\Desktop\saxpy_dma"><\/item>
+<item  id="33" filename="lab5_vadd_dma_azaz/vadd_dma.cpp" linenumber="60" name="size_c" contextFuncName="krnl_vadd" moduleName="krnl_vadd" rtlName="size_c_U" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\QCH170308\Desktop\saxpy_dma"><\/item>
+<item  id="34" filename="lab5_vadd_dma_azaz/vadd_dma.cpp" linenumber="60" name="a_c" contextFuncName="krnl_vadd" moduleName="krnl_vadd" rtlName="a_c_U" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\QCH170308\Desktop\saxpy_dma"><\/item>
+<item  id="78" filename="lab5_vadd_dma_azaz/vadd_dma.cpp" linenumber="75" name="_ln75" contextFuncName="krnl_vadd" moduleName="krnl_vadd" rtlName="krnl_vadd_entry42_U0" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\QCH170308\Desktop\saxpy_dma"><\/item>
+<item  id="81" filename="lab5_vadd_dma_azaz/vadd_dma.cpp" linenumber="77" name="_ln77" contextFuncName="krnl_vadd" moduleName="krnl_vadd" rtlName="load_input20_U0" latency="1" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\QCH170308\Desktop\saxpy_dma"><\/item>
+<item  id="82" filename="lab5_vadd_dma_azaz/vadd_dma.cpp" linenumber="78" name="_ln78" contextFuncName="krnl_vadd" moduleName="krnl_vadd" rtlName="load_input_U0" latency="1" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\QCH170308\Desktop\saxpy_dma"><\/item>
+<item  id="85" filename="lab5_vadd_dma_azaz/vadd_dma.cpp" linenumber="79" name="_ln79" contextFuncName="krnl_vadd" moduleName="krnl_vadd" rtlName="compute_add_U0" latency="1" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\QCH170308\Desktop\saxpy_dma"><\/item>
+<item  id="86" filename="lab5_vadd_dma_azaz/vadd_dma.cpp" linenumber="80" name="_ln80" contextFuncName="krnl_vadd" moduleName="krnl_vadd" rtlName="store_result_U0" latency="1" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\QCH170308\Desktop\saxpy_dma"><\/item>
+<\/annotationInfo>
+</annotationInfo>

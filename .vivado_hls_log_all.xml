@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [HLS 200-631] Ignoring ap_ctrl_none interface for krnl_vadd due to krnl_vadd.entry42 with non-FIFO I/O" projectName="lab5_vadd_dma_azaz" solutionName="solution1" date="2022-04-19T21:43:58.434+0830" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'krnl_vadd.entry42' to 'krnl_vadd_entry42'." projectName="lab5_vadd_dma_azaz" solutionName="solution1" date="2022-04-19T21:43:56.465+0830" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'in1.data.V' (lab5_vadd_dma_azaz/vadd_dma.cpp:60)." projectName="lab5_vadd_dma_azaz" solutionName="solution1" date="2022-04-19T21:43:55.084+0830" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'in2.data.V' (lab5_vadd_dma_azaz/vadd_dma.cpp:60)." projectName="lab5_vadd_dma_azaz" solutionName="solution1" date="2022-04-19T21:43:54.878+0830" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'out.data.V' (lab5_vadd_dma_azaz/vadd_dma.cpp:60)." projectName="lab5_vadd_dma_azaz" solutionName="solution1" date="2022-04-19T21:43:54.874+0830" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'krnl_vadd_ap_fmul_2_max_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="lab5_vadd_dma_azaz" solutionName="solution1" date="2022-04-19T21:44:27.436+0830" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'krnl_vadd_ap_fadd_3_full_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="lab5_vadd_dma_azaz" solutionName="solution1" date="2022-04-19T21:44:23.953+0830" type="Warning"/>
+      </packageLog>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

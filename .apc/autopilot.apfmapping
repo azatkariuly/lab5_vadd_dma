@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="vadd_dma.cpp" path="C:\Users\QCH170308\Desktop\saxpy_dma\lab5_vadd_dma_azaz\vadd_dma.cpp"/>
+    <originFiles name="vadd_dma.h" path="C:\Users\QCH170308\Desktop\saxpy_dma\lab5_vadd_dma_azaz\vadd_dma.h"/>
+  </source>
+  <testbench>
+    <originFiles name="tb_vadd_dma.cpp" path="C:\Users\QCH170308\Desktop\saxpy_dma\lab5_vadd_dma_azaz\tb_vadd_dma.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

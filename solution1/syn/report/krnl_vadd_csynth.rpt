@@ -1,0 +1,177 @@
+
+
+================================================================
+== Vivado HLS Report for 'krnl_vadd'
+================================================================
+* Date:           Tue Apr 19 22:13:58 2022
+
+* Version:        2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)
+* Project:        lab5_vadd_dma_azaz
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  | 10.00 ns | 7.268 ns |   1.25 ns  |
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+------+------+----------+
+    |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline |
+    |   min   |   max   |    min    |    max    |  min |  max |   Type   |
+    +---------+---------+-----------+-----------+------+------+----------+
+    |     4112|     4112| 41.120 us | 41.120 us |  4109|  4109| dataflow |
+    +---------+---------+-----------+-----------+------+------+----------+
+
+    + Detail: 
+        * Instance: 
+        +----------------------+-------------------+---------+---------+-----------+-----------+------+------+---------+
+        |                      |                   |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
+        |       Instance       |       Module      |   min   |   max   |    min    |    max    |  min |  max |   Type  |
+        +----------------------+-------------------+---------+---------+-----------+-----------+------+------+---------+
+        |compute_add_U0        |compute_add        |     4108|     4108| 41.080 us | 41.080 us |  4108|  4108|   none  |
+        |store_result_U0       |store_result       |     4099|     4099| 40.990 us | 40.990 us |  4099|  4099|   none  |
+        |load_input20_U0       |load_input20       |     4098|     4098| 40.980 us | 40.980 us |  4098|  4098|   none  |
+        |load_input_U0         |load_input         |     4098|     4098| 40.980 us | 40.980 us |  4098|  4098|   none  |
+        |krnl_vadd_entry42_U0  |krnl_vadd_entry42  |        0|        0|    0 ns   |    0 ns   |     0|     0|   none  |
+        +----------------------+-------------------+---------+---------+-----------+-----------+------+------+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+-----+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  | URAM|
++-----------------+---------+-------+--------+-------+-----+
+|DSP              |        -|      -|       -|      -|    -|
+|Expression       |        -|      -|       -|      -|    -|
+|FIFO             |        0|      -|      40|    352|    -|
+|Instance         |        0|      5|    1135|   1698|    -|
+|Memory           |        -|      -|       -|      -|    -|
+|Multiplexer      |        -|      -|       -|      -|    -|
+|Register         |        -|      -|       -|      -|    -|
++-----------------+---------+-------+--------+-------+-----+
+|Total            |        0|      5|    1175|   2050|    0|
++-----------------+---------+-------+--------+-------+-----+
+|Available        |      280|    220|  106400|  53200|    0|
++-----------------+---------+-------+--------+-------+-----+
+|Utilization (%)  |        0|      2|       1|      3|    0|
++-----------------+---------+-------+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +----------------------------+--------------------------+---------+-------+-----+-----+-----+
+    |          Instance          |          Module          | BRAM_18K| DSP48E|  FF | LUT | URAM|
+    +----------------------------+--------------------------+---------+-------+-----+-----+-----+
+    |compute_add_U0              |compute_add               |        0|      5|  717|  963|    0|
+    |krnl_vadd_AXILiteS_s_axi_U  |krnl_vadd_AXILiteS_s_axi  |        0|      0|  106|  168|    0|
+    |krnl_vadd_entry42_U0        |krnl_vadd_entry42         |        0|      0|    3|   47|    0|
+    |load_input_U0               |load_input                |        0|      0|  102|  149|    0|
+    |load_input20_U0             |load_input20              |        0|      0|  102|  158|    0|
+    |store_result_U0             |store_result              |        0|      0|  105|  213|    0|
+    +----------------------------+--------------------------+---------+-------+-----+-----+-----+
+    |Total                       |                          |        0|      5| 1135| 1698|    0|
+    +----------------------------+--------------------------+---------+-------+-----+-----+-----+
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    +----------------+---------+---+----+-----+------+-----+---------+
+    |      Name      | BRAM_18K| FF| LUT| URAM| Depth| Bits| Size:D*B|
+    +----------------+---------+---+----+-----+------+-----+---------+
+    |a_c_U           |        0|  5|   0|    -|     3|   32|       96|
+    |in1_stream_V_U  |        0|  5|   0|    -|     2|   32|       64|
+    |in2_stream_V_U  |        0|  5|   0|    -|     2|   32|       64|
+    |out_stream_V_U  |        0|  5|   0|    -|     2|   32|       64|
+    |size_c10_U      |        0|  5|   0|    -|     2|   32|       64|
+    |size_c11_U      |        0|  5|   0|    -|     2|   32|       64|
+    |size_c9_U       |        0|  5|   0|    -|     2|   32|       64|
+    |size_c_U        |        0|  5|   0|    -|     2|   32|       64|
+    +----------------+---------+---+----+-----+------+-----+---------+
+    |Total           |        0| 40|   0|    0|    17|  256|      544|
+    +----------------+---------+---+----+-----+------+-----+---------+
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------+-----+-----+--------------+--------------+--------------+
+|        RTL Ports       | Dir | Bits|   Protocol   | Source Object|    C Type    |
++------------------------+-----+-----+--------------+--------------+--------------+
+|s_axi_AXILiteS_AWVALID  |  in |    1|     s_axi    |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_AWREADY  | out |    1|     s_axi    |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_AWADDR   |  in |    5|     s_axi    |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_WVALID   |  in |    1|     s_axi    |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_WREADY   | out |    1|     s_axi    |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_WDATA    |  in |   32|     s_axi    |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_WSTRB    |  in |    4|     s_axi    |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_ARVALID  |  in |    1|     s_axi    |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_ARREADY  | out |    1|     s_axi    |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_ARADDR   |  in |    5|     s_axi    |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_RVALID   | out |    1|     s_axi    |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_RREADY   |  in |    1|     s_axi    |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_RDATA    | out |   32|     s_axi    |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_RRESP    | out |    2|     s_axi    |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_BVALID   | out |    1|     s_axi    |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_BREADY   |  in |    1|     s_axi    |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_BRESP    | out |    2|     s_axi    |   AXILiteS   |    scalar    |
+|ap_clk                  |  in |    1| ap_ctrl_none |   krnl_vadd  | return value |
+|ap_rst_n                |  in |    1| ap_ctrl_none |   krnl_vadd  | return value |
+|in1_TDATA               |  in |   32|     axis     |  in1_data_V  |    pointer   |
+|in1_TKEEP               |  in |    4|     axis     |  in1_keep_V  |    pointer   |
+|in1_TSTRB               |  in |    4|     axis     |  in1_strb_V  |    pointer   |
+|in1_TUSER               |  in |    4|     axis     |  in1_user_V  |    pointer   |
+|in1_TLAST               |  in |    1|     axis     |  in1_last_V  |    pointer   |
+|in1_TID                 |  in |    5|     axis     |   in1_id_V   |    pointer   |
+|in1_TDEST               |  in |    5|     axis     |  in1_dest_V  |    pointer   |
+|in1_TVALID              |  in |    1|     axis     |  in1_dest_V  |    pointer   |
+|in1_TREADY              | out |    1|     axis     |  in1_dest_V  |    pointer   |
+|in2_TDATA               |  in |   32|     axis     |  in2_data_V  |    pointer   |
+|in2_TKEEP               |  in |    4|     axis     |  in2_keep_V  |    pointer   |
+|in2_TSTRB               |  in |    4|     axis     |  in2_strb_V  |    pointer   |
+|in2_TUSER               |  in |    4|     axis     |  in2_user_V  |    pointer   |
+|in2_TLAST               |  in |    1|     axis     |  in2_last_V  |    pointer   |
+|in2_TID                 |  in |    5|     axis     |   in2_id_V   |    pointer   |
+|in2_TDEST               |  in |    5|     axis     |  in2_dest_V  |    pointer   |
+|in2_TVALID              |  in |    1|     axis     |  in2_dest_V  |    pointer   |
+|in2_TREADY              | out |    1|     axis     |  in2_dest_V  |    pointer   |
+|out_r_TDATA             | out |   32|     axis     |  out_data_V  |    pointer   |
+|out_r_TKEEP             | out |    4|     axis     |  out_keep_V  |    pointer   |
+|out_r_TSTRB             | out |    4|     axis     |  out_strb_V  |    pointer   |
+|out_r_TUSER             | out |    4|     axis     |  out_user_V  |    pointer   |
+|out_r_TLAST             | out |    1|     axis     |  out_last_V  |    pointer   |
+|out_r_TID               | out |    5|     axis     |   out_id_V   |    pointer   |
+|out_r_TDEST             | out |    5|     axis     |  out_dest_V  |    pointer   |
+|out_r_TVALID            | out |    1|     axis     |  out_dest_V  |    pointer   |
+|out_r_TREADY            |  in |    1|     axis     |  out_dest_V  |    pointer   |
++------------------------+-----+-----+--------------+--------------+--------------+
+
